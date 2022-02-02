@@ -2,8 +2,8 @@
 
 
 ### Repo Structure:
-ring: This is the django project (root directory) containing the django files.
-lor: This is the django application.
+1) ring: This is the django project (root directory) containing the django files.
+2) lor: This is the django application.
 
 
 ### Implementation Stack:
