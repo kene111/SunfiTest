@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "django_settings": "rings.settings",
+        "profile_name": "default",
+        "project_name": "rings",
+        "runtime": "python3.6",
+        "aws_region" : "us-east-2",
+        "s3_bucket": "zappa-buck"
+    }
+}
