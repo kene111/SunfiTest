@@ -20,13 +20,14 @@ lor: This is the django application.
 
 ### Local Endpoint:
 
-http://127.0.0.1:8000/characters/ - This endpoint is used to obtain the characters. (GET)
-http://127.0.0.1:8000/characters/<str:id>/quotes/ -  This endpoint is used to obtain the quotes that belong to a character id. (GET)
-http://127.0.0.1:8000/register/ - This endpoint is used to signup. (POST)
-http://127.0.0.1:8000/login/ -  This endpoint is used for login. (POST)
-http://127.0.0.1:8000/characters/<str:id>/favorites/ - This endpoint is used by authenticated users to favorite a specific character. (POST)
-http://127.0.0.1:8000/characters/<str:char_id>/quotes/<str:quo_id>/favorites/ -  This endpoint is used by authenticated users to favorite a specific quote and character. (POST)
-http://127.0.0.1:8000/favorites/ - This endpoint is used to get all entities liked by the authenticated user. (GET)
+1) http://127.0.0.1:8000/characters/ - This endpoint is used to obtain the characters. (GET)
+2) http://127.0.0.1:8000/characters/<str:id>/quotes/ -  This endpoint is used to obtain the quotes that belong to a character id. (GET)
+3) http://127.0.0.1:8000/register/ - This endpoint is used to signup. (POST)
+4) http://127.0.0.1:8000/login/ -  This endpoint is used for login. (POST)
+5) http://127.0.0.1:8000/characters/<str:id>/favorites/ - This endpoint is used by authenticated users to favorite a specific character. (POST)
+6) http://127.0.0.1:8000/characters/<str:char_id>/quotes/<str:quo_id>/favorites/ -  This endpoint is used by authenticated users to favorite a specific quote and character.     (POST)
+7) http://127.0.0.1:8000/favorites/ - This endpoint is used to get all entities liked by the authenticated user. (GET)
+8) http://127.0.0.1:8000/logout/ - This endpoint is used logout
 
 ###### Challenges:
 1) Deployment: 
