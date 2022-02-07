@@ -18,16 +18,16 @@
 ### Test Cases:
 1) Basic test cases were writting in order to test the API end points. This can be found using this path ->  rings/lor/tests.py
 
-### Local Endpoint:
+### Deployed Endpoints:
 
-1) http://127.0.0.1:8000/characters/ - This endpoint is used to obtain the characters. (GET)
-2) http://127.0.0.1:8000/characters/<str:id>/quotes/ -  This endpoint is used to obtain the quotes that belong to a character id. (GET)
-3) http://127.0.0.1:8000/register/ - This endpoint is used to signup. (POST)
-4) http://127.0.0.1:8000/login/ -  This endpoint is used for login. (POST)
-5) http://127.0.0.1:8000/characters/<str:id>/favorites/ - This endpoint is used by authenticated users to favorite a specific character. (POST)
-6) http://127.0.0.1:8000/characters/<str:char_id>/quotes/<str:quo_id>/favorites/ -  This endpoint is used by authenticated users to favorite a specific quote and character.     (POST)
-7) http://127.0.0.1:8000/favorites/ - This endpoint is used to get all entities liked by the authenticated user. (GET)
-8) http://127.0.0.1:8000/logout/ - This endpoint is used logout.
+1) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/characters/ - This endpoint is used to obtain the characters. (GET)
+2) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/characters/<str:id>/quotes/ -  This endpoint is used to obtain the quotes that belong to a character id. (GET)
+3) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/register/ - This endpoint is used to signup. (POST)
+4) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/login/ -  This endpoint is used for login. (POST)
+5) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/characters/<str:id>/favorites/ - This endpoint is used by authenticated users to favorite a specific character. (POST)
+6) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/characters/<str:char_id>/quotes/<str:quo_id>/favorites/ -  This endpoint is used by authenticated users to favorite a specific quote and character.     (POST)
+7) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/favorites/ - This endpoint is used to get all entities liked by the authenticated user. (GET)
+8) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/logout/ - This endpoint is used logout.
 
 
 ### Running The Application:
@@ -36,10 +36,9 @@
 3) install the dependencies in the requirementnts.txt
 4) run the django application
 
-
-###### Challenges:
-1) Deployment: Due to certain AWS issues the api service was not deployed. This problem is being rectified.
-
+### Note:
+1) To make requests as an authenticated user, make sure to add the word "Token" to the token generated in the headers section. Example: Token <token-generated>
+2) The first to links do not need authentication in order to make requests.
 
 
 
