@@ -37,7 +37,7 @@
 4) run the django application
 
 ### Note:
-1) To make requests as an authenticated user, make sure to add the word "Token" to the token generated in the headers section. Example: Token <<token-generated>>>
+1) To make requests as an authenticated user, make sure to add the word "Token" to the token generated in the headers section. Example: Token {auth-token-generated}
 2) The first to links do not need authentication in order to make requests.
 
 
