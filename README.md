@@ -28,7 +28,7 @@
 6) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/characters/<str:char_id>/quotes/<str:quo_id>/favorites/ -  This endpoint is used by authenticated users to favorite a specific quote and character.     (POST)
 7) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/favorites/ - This endpoint is used to get all entities liked by the authenticated user. (GET)
 8) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/logout/ - This endpoint is used logout.
-
+9) https://agrydrqvug.execute-api.us-west-2.amazonaws.com/dev/ - This endpoint is used to check if the server is active. (GET)
 
 ### Running The Application:
 1) clone the repo in a desired directory locally.
