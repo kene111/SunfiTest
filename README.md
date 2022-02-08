@@ -42,5 +42,9 @@ Example: Authorization: Token {auth-token-generated}
 2) The first two links do not need authentication in order to make requests.
 
 
+#### challenge:
+1) zappa not installing all the dependencies in the requirements.txt
+
+
 
 
