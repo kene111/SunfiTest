@@ -1,10 +1,18 @@
 {
     "dev": {
+    	"aws_region": "us-west-2",
         "django_settings": "rings.settings",
         "profile_name": "default",
         "project_name": "rings",
         "runtime": "python3.6",
-        "aws_region" : "us-east-2",
-        "s3_bucket": "zappa-buck"
+        "timeout_seconds": 900,
+       	"s3_bucket": "sunfi-zappa-bucket",
+        "role_name": "ZappaDjangoRole",
+        "role_arn": "arn:aws:iam::080656242060:role/ZappaDjangoRole",
+        "vpc_config" : {
+            "SubnetIds": ["subnet-05fc4e0f8595cd51b", "subnet-0a9aea374ffed628e", "subnet-09b093dcd876ddb3c","subnet-0f79128439008f96c"],
+            "SecurityGroupIds": [ "sg-0af3e5439b41daa54" ]
+        }
     }
 }
+

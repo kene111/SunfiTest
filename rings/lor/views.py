@@ -33,18 +33,19 @@ class ObtainCharacters(APIView):
 
 	def get(self, requests, formats=None):
  
-		URL = 'https://the-one-api.dev/v2'
+		URL = "https://the-one-api.dev/v2"
 		AUTH_CODE = settings.ONE_API_KEY 
 		PARAMS = {'Authorization':AUTH_CODE}
 		characters = '/character'
 		url = URL + characters
 
-
 		s = req.Session()
 		s.headers.update(PARAMS)
-		r = s.get(url = url)
+		r = s.get(url = url, timeout=None)
 		data = r.json()
 		return Response(data, status=status.HTTP_200_OK)
+
+	
 
 #specific character quote requests
 class CharactersQuotes(APIView):

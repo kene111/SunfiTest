@@ -30,7 +30,7 @@ ONE_API_KEY = SECRET["ACCESS_TOKEN"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "https://kch20qlls8.execute-api.us-west-2.amazonaws.com",]
+ALLOWED_HOSTS = ['agrydrqvug.execute-api.us-west-2.amazonaws.com']#'agrydrqvug.execute-api.us-west-2.amazonaws.com'
 
 
 # Application definition
@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'zappa_django_utils',
     'knox'
+    #'zappa_django_utils'
 ]
 
 
@@ -65,7 +67,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 
 ROOT_URLCONF = 'rings.urls'
 
@@ -98,7 +100,7 @@ DATABASES = {
     }
 }
 '''
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -106,6 +108,17 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '',
         'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mydatabase',
+        'USER': 'postgres',
+        'PASSWORD': '',
+        'HOST': 'mydatabase.cvxda6tkpri0.us-west-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -152,3 +165,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# link on how to deploy to zappa: https://www.codingforentrepreneurs.com/blog/aws-iam-user-role-policies-zappa-serverless-python
+# link on how to set up postgres pgadmin4 https://towardsdatascience.com/creating-and-connecting-a-postgresql-database-with-amazons-relational-database-service-rds-dcc9db0cd37f
